@@ -1,3 +1,102 @@
+@charset "UTF-8";
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: #e0f7fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
 
+/* Kontener */
+.container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  border: 5px solid #f74b84;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+/* Nagłówek gry */
+h1 {
+  color: #ff4081;
+  font-size: 36px;
+  margin-bottom: 10px;
+  text-shadow: 3px 3px #ffccbc;
+}
+
+/* Zasady gry */
+p, ul {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+}
+
+/* Stylizacja przycisków */
+button {
+  background-color: #f25c8e;
+  color: white;
+  padding: 15px 25px;
+  margin: 15px 0;
+  border: none;
+  border-radius: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #e3477b;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #f2165f;
+  transform: scale(0.95);
+}
+
+button img {
+  width: 100px;
+  height: 80px;
+  margin-right: 15px;
+  border-radius: 10px;
+}
+
+/* Stylizacja komunikatów */
+#messages {
+  background-color: #fff59d;
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 25px;
+  font-size: 20px;
+  color: #333;
+  min-height: 60px;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Stylizacja dla przycisków wyboru */
+#buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLmNzcyIsIi4uL3Nhc3Mvc3R5bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxnQkFBZ0I7QUNDaEI7RUFDSSxpREFBQTtFQUNBLHlCQUFBO0VBQ0EsU0FBQTtFQUNBLFVBQUE7RUFDQSxhQUFBO0VBQ0Esc0JBQUE7RUFDQSx1QkFBQTtFQUNBLG1CQUFBO0VBQ0EsYUFBQTtFQUNBLGtCQUFBO0FEQ0o7O0FDRUEsYUFBQTtBQUNBO0VBQ0kseUJBQUE7RUFDQSxhQUFBO0VBQ0EsbUJBQUE7RUFDQSwwQ0FBQTtFQUNBLGtCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxXQUFBO0VBQ0EseUJBQUE7QURDSjs7QUNFQSxpQkFBQTtBQUNBO0VBQ0ksY0FBQTtFQUNBLGVBQUE7RUFDQSxtQkFBQTtFQUNBLDRCQUFBO0FEQ0o7O0FDRUEsZUFBQTtBQUNBO0VBQ0ksV0FBQTtFQUNBLGVBQUE7RUFDQSxtQkFBQTtBRENKOztBQ0VBO0VBQ0kscUJBQUE7RUFDQSxrQkFBQTtFQUNBLGdCQUFBO0FEQ0o7O0FDRUEsMEJBQUE7QUFDQTtFQUNJLHlCQUFBO0VBQ0EsWUFBQTtFQUNBLGtCQUFBO0VBQ0EsY0FBQTtFQUNBLFlBQUE7RUFDQSxtQkFBQTtFQUNBLGVBQUE7RUFDQSxlQUFBO0VBQ0EsMkRBQUE7RUFDQSxXQUFBO0VBQ0EsYUFBQTtFQUNBLG1CQUFBO0VBQ0EsdUJBQUE7RUFDQSx5Q0FBQTtBRENKOztBQ0VBO0VBQ0kseUJBQUE7RUFDQSxzQkFBQTtBRENKOztBQ0VBO0VBQ0kseUJBQUE7RUFDQSxzQkFBQTtBRENKOztBQ0VBO0VBQ0ksWUFBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtFQUNBLG1CQUFBO0FEQ0o7O0FDRUEsMkJBQUE7QUFDQTtFQUNJLHlCQUFBO0VBQ0EsbUJBQUE7RUFDQSxhQUFBO0VBQ0EsZ0JBQUE7RUFDQSxlQUFBO0VBQ0EsV0FBQTtFQUNBLGdCQUFBO0VBQ0EsOENBQUE7QURDSjs7QUNFQSxxQ0FBQTtBQUNBO0VBQ0ksYUFBQTtFQUNBLHNCQUFBO0VBQ0EsU0FBQTtBRENKIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */
