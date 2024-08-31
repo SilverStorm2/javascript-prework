@@ -3,7 +3,7 @@
 const clearMessages = function() {
   document.getElementById('messages').innerHTML = '';
 }
-
+// do zmiany !!!
 function playGame(playerInput) {
   clearMessages(); // Usunięcie wszystkich wcześniejszych komunikatów
 
@@ -23,7 +23,7 @@ function playGame(playerInput) {
   }
 
   // Funkcja wyświetlająca wynik gry
-  function displayResult(argComputerMove, argPlayerMove) {
+  const displayResult = function(argComputerMove, argPlayerMove) {
     console.log('moves:', argComputerMove, argPlayerMove); // Wyświetlam oba ruchy na początku funkcji
     if (argPlayerMove == 'nieznany ruch') {
       console.log('Player made an invalid move'); // Sprawdzam, czy gracz wprowadził nieznany ruch
