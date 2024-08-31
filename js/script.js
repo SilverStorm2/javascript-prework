@@ -8,7 +8,7 @@ function playGame(playerInput) {
   clearMessages(); // Usunięcie wszystkich wcześniejszych komunikatów
 
   // Funkcja zwracająca nazwę ruchu na podstawie ID
-  function getMoveName(argMoveId) {
+  const getMoveName = function(argMoveId) {
     console.log('getMoveName called with:', argMoveId); // Sprawdza, z jakim argumentem wywoływana jest funkcja
     if (argMoveId == 1) {
       return 'kamień';
