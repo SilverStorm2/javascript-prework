@@ -48,7 +48,7 @@ function playGame(playerInput) {
 
   console.log('Gracz wpisał:', playerInput);
 
-  let playerMove = getMoveName(playerInput);
+  const playerMove = getMoveName(playerInput);
 
   console.log('Player move is:', playerMove); // Sprawdzam, jaka wartość została przypisana do playerMove
 
