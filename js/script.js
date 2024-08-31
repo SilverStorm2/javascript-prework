@@ -3,9 +3,7 @@
 const clearMessages = function() {
   document.getElementById('messages').innerHTML = '';
 }
-// do zmiany !!!
-function playGame(playerInput) {
-  clearMessages(); // Usunięcie wszystkich wcześniejszych komunikatów
+
 
   // Funkcja zwracająca nazwę ruchu na podstawie ID
   const getMoveName = function(argMoveId) {
@@ -45,6 +43,9 @@ function playGame(playerInput) {
       printMessage('Przegrywasz!');
     }
   }
+// główna funkcja gry  
+const playGame = function(playerInput) {
+  clearMessages(); // Usunięcie wszystkich wcześniejszych komunikatów
 
   console.log('Gracz wpisał:', playerInput);
 
