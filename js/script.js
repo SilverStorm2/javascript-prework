@@ -22,7 +22,7 @@ function playGame(playerInput) {
     }
   }
 
-  // Funkcja wyświetlająca wynik gry
+  // Funkcja wyświetlająca wynik gry // do miany !!!
   const displayResult = function(argComputerMove, argPlayerMove) {
     console.log('moves:', argComputerMove, argPlayerMove); // Wyświetlam oba ruchy na początku funkcji
     if (argPlayerMove == 'nieznany ruch') {
@@ -58,7 +58,7 @@ function playGame(playerInput) {
   let randomNumber = Math.floor(Math.random() * 3 + 1);
   console.log('Random number for computer move:', randomNumber); // Sprawdzam, jaka liczba została wylosowana dla komputera
 
-  let computerMove = getMoveName(randomNumber);
+  const computerMove = getMoveName(randomNumber);
 
   console.log('Computer move is:', computerMove); // Sprawdzam, jaki ruch został przypisany do computerMove
 
