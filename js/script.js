@@ -55,7 +55,7 @@ function playGame(playerInput) {
   printMessage('Twój ruch to: ' + playerMove);
 
   // Losowanie ruchu komputera
-  let randomNumber = Math.floor(Math.random() * 3 + 1);
+  const randomNumber = Math.floor(Math.random() * 3 + 1);
   console.log('Random number for computer move:', randomNumber); // Sprawdzam, jaka liczba została wylosowana dla komputera
 
   const computerMove = getMoveName(randomNumber);
