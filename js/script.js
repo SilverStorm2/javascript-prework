@@ -1,5 +1,6 @@
+{
 // Funkcja usuwająca wszystkie wcześniej wyświetlone komunikaty
-function clearMessages() {
+const clearMessages = function() {
   document.getElementById('messages').innerHTML = '';
 }
 
@@ -81,3 +82,4 @@ document.getElementById('play-paper').addEventListener('click', function() {
 document.getElementById('play-scissors').addEventListener('click', function() {
   playGame(3); // Wywołanie gry z ruchem "Nożyce"
 });
+}
